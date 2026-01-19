@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JARVIS AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <h3>JARVIS</h3>
+    <p>Smart AI Assistant</p>
+</div>
+
+<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<header class="top-bar">
+    <div class="logo-area">
+        <img src="logo.jpg" alt="JARVIS Logo">
+        <h1>Deep Agent</h1>
+    </div>
+    <span class="status">Online</span>
+</header>
+
+<main class="welcome-wrapper" id="welcome">
+    <div class="welcome-content">
+        <h1 class="agent-title">Deep Agent</h1>
+        <p class="agent-subtitle">
+            I am Deep Agent <span>(JARVIS)</span>. How can I help you?
+        </p>
+    </div>
+</main>
+
+<!-- CHAT -->
+<div class="chat-wrapper hidden" id="chatArea">
+    <div class="chat-box" id="chatBox"></div>
+</div>
+
+<div class="input-bar center-input" id="inputBar">
+<textarea id="userInput" placeholder="Ask Deep Agent..." rows="1"></textarea>
+<button id="sendBtn" onclick="sendMessage()" class="send-btn" disabled>↑</button>
+    <button onclick="startVoice()">🎤</button>
+</div>
+
+<footer class="jarvis-footer">
+    Created by <strong>Muhammad Ali</strong> ·
+    <a href="https://instagram.com/YOUR_INSTAGRAM_ID" target="_blank">
+        Instagram
+    </a>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+</body>
+</html>
+
+
