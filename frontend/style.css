@@ -215,6 +215,7 @@ body {
     .jarvis-footer {
         font-size: 11px;
     }
+ 
 }
 .hidden {
     display: none;
@@ -305,11 +306,19 @@ body {
 }
 @media (max-width: 640px) {
     .footer-input {
-        bottom: env(safe-area-inset-bottom);
+        bottom:30px;
         padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    }
+       .message{
+        max-width: 60%;
     }
 }
 .message.ai {
     background: rgba(255,255,255,0.85);
     backdrop-filter: blur(8px);
+}
+@media (max-width: 480px) {
+    .message{
+        max-width: 70%;
+    }
 }
